@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hogwarts-legacy-landing-page/static/css/main.935da9da.css",
+    "main.js": "/hogwarts-legacy-landing-page/static/js/main.f1c79dbf.js",
+    "static/media/Artintelart.png": "/hogwarts-legacy-landing-page/static/media/Artintelart.fff93612ca33d1e658f3.png",
+    "static/media/hogwarts1.jpg": "/hogwarts-legacy-landing-page/static/media/hogwarts1.63d11d26fba22401c935.jpg",
+    "static/media/griffindor.jpeg": "/hogwarts-legacy-landing-page/static/media/griffindor.fbf78cab2b6ce34324d9.jpeg",
+    "static/media/houses.jpeg": "/hogwarts-legacy-landing-page/static/media/houses.ca8e0625237e926666e1.jpeg",
+    "static/media/wand.jpeg": "/hogwarts-legacy-landing-page/static/media/wand.b64952ede31c787b5630.jpeg",
+    "static/media/logo.png": "/hogwarts-legacy-landing-page/static/media/logo.9eedc6c1dc36b5cf3228.png",
+    "static/media/patronous.jpeg": "/hogwarts-legacy-landing-page/static/media/patronous.1152cc0f0bdd158fcfb9.jpeg",
+    "static/media/bot-bar.png": "/hogwarts-legacy-landing-page/static/media/bot-bar.2d6d95627869968fe224.png",
+    "static/media/to-bar.png": "/hogwarts-legacy-landing-page/static/media/to-bar.2d6d95627869968fe224.png",
+    "index.html": "/hogwarts-legacy-landing-page/index.html",
+    "main.935da9da.css.map": "/hogwarts-legacy-landing-page/static/css/main.935da9da.css.map",
+    "main.f1c79dbf.js.map": "/hogwarts-legacy-landing-page/static/js/main.f1c79dbf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.935da9da.css",
+    "static/js/main.f1c79dbf.js"
+  ]
+}
