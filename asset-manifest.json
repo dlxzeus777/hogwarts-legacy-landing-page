@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hogwarts-legacy-landing-page/static/css/main.935da9da.css",
+    "main.css": "/hogwarts-legacy-landing-page/static/css/main.6bc06fbe.css",
     "main.js": "/hogwarts-legacy-landing-page/static/js/main.f1c79dbf.js",
     "static/media/Artintelart.png": "/hogwarts-legacy-landing-page/static/media/Artintelart.fff93612ca33d1e658f3.png",
     "static/media/hogwarts1.jpg": "/hogwarts-legacy-landing-page/static/media/hogwarts1.63d11d26fba22401c935.jpg",
@@ -12,11 +12,11 @@
     "static/media/bot-bar.png": "/hogwarts-legacy-landing-page/static/media/bot-bar.2d6d95627869968fe224.png",
     "static/media/to-bar.png": "/hogwarts-legacy-landing-page/static/media/to-bar.2d6d95627869968fe224.png",
     "index.html": "/hogwarts-legacy-landing-page/index.html",
-    "main.935da9da.css.map": "/hogwarts-legacy-landing-page/static/css/main.935da9da.css.map",
+    "main.6bc06fbe.css.map": "/hogwarts-legacy-landing-page/static/css/main.6bc06fbe.css.map",
     "main.f1c79dbf.js.map": "/hogwarts-legacy-landing-page/static/js/main.f1c79dbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.935da9da.css",
+    "static/css/main.6bc06fbe.css",
     "static/js/main.f1c79dbf.js"
   ]
 }
