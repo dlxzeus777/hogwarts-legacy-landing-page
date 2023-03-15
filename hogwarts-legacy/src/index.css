@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(./images/hogwarts1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+header
+{
+  max-width: 50rem;
+  margin-inline: auto;
+  padding: 0.5rem;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hogwarts
+{
+  font-size: 3rem;
+  background: -webkit-linear-gradient( #eee, #999);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.links
+{
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+  color: white;
+}
+.nav-link
+{
+  position: relative;
+}
+.nav-link::after
+{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .2s linear;
+}
+.nav-link:hover::after
+{
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform .2s linear;
+}
+.home-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+.home-container > *
+{
+  margin: 0;
+}
+.home-btn
+{
+  background: yellow;
+  color: black;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background .2s linear;
+}
+.home-btn:hover
+{
+  background: rgb(197, 197, 7);
+  transition: background .2s linear;
+}
+.home-p
+{
+  font-size: 2rem;
+  font-weight: normal;
+}
+.home-h1
+{
+  font-size: 5rem;
+}
+.down-arrow
+{
+  font-size: 3rem;
+  margin-top: 5rem;
+  position: relative;
+  animation: jump infinite 2s linear
+}
+
+@keyframes jump
+{
+  0%{top: 0;}
+  50%{top: 50px}  
+  100%{top: 0}  
+}
+
+.about
+{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url(./images/griffindor.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper
+{
+  max-width: 1400px;
+  margin-inline: auto;
+}
+.about-hero
+{
+  width: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-image
+{
+  border-radius: 15px;
+  border: 5px solid white;
+}
+.about-text
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+}
+.about-h2
+{
+  font-size: 4rem;
+}
+.about-p
+{
+  font-size: 1.5rem;
+}
+.about-container
+{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 1rem;
+}
+.about-buttons
+{
+  display: flex;
+  gap: 1rem;
+}
+.discover-h3
+{
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  margin-top: 4rem;
+}
+.discover-image-container
+{
+  width: 15rem;
+  position: relative;
+  background: black;
+  transition: transform .1s linear;
+}
+.discover-image-container > p{
+  position: absolute;
+  font-size: 1.5rem;
+  color: white;
+  bottom: 0;
+  left: 10%;
+  opacity: 1;
+}
+.discover-image
+{
+  opacity: .8;
+  border-radius: 5px;
+  
+}
+.discover-image-container:hover
+{
+  transform: scale(1.1);
+  transition: transform .1s linear;
+}
+.discover-images
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 5rem;
+  place-items: center;
+}
+.discover{
+  margin: 10rem 0;
+}
+
+footer{
+  background: black;
+  box-shadow: 0px -50px 70px black;
+  padding: 1rem;
+}
+.footer-image
+{
+  width: 70rem;
+}
+.footer-images-wrapper
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.hamburger-menu
+{
+  display: none;
+}
+aside
+{
+  display: none;
+}
+
+@media (max-width: 1300px)
+{
+  .about-hero
+  {
+    width: 25rem;
+  }  
+}
+
+@media (max-width: 940px)
+{
+  .about-h2
+  {
+    font-size: 3rem;
+  } 
+  .about-p
+  {
+    font-size: 1.4rem;
+  }
+  .about-hero
+  {
+    max-width: 20rem;
+    width: 90%;
+  }  
+}
+
+@media (max-width: 835px)
+{
+  .about-container{
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+  }
+  .about-text
+  {
+    color: white;
+  }
+  .discover-image-container:hover
+  {
+    transform: scaleX(1);
+  }
+  .discover-images
+  {
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 1rem;
+  }
+  .footer-image
+  {
+    width: 90%;
+  }
+}
+@media (max-width: 600px)
+{
+  .links
+  {
+    display: none;
+  }
+  .hamburger-menu
+  {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  aside
+  {
+    padding: 10px;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    transform: translateX(100%);
+    width: 200px;
+    transition: transform 250ms ease-in-out;
+    z-index: 99;
+  }
+  .mobile-links
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hogwarts-logo-mobile
+  {
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+  }
+  .mobile-nav-links
+  {
+    font-size: 1.2rem;
+  }
+  aside.visible
+  {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 400px)
+{
+  .hogwarts
+  {
+    font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 500px)
+{
+  .home-h1
+  {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .home-p
+  {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .about-p
+  {
+    font-size: 1.3rem;
+  }
+  .about-h2{
+    font-size: 2rem;
+  }
+  .about-buttons
+  {
+    flex-direction: column;
+  }
+  .discover-h3
+  {
+    font-size: 2rem;
+  }
+}
